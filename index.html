@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312"/>
+<title>BroswerMei</title>
+<style type="text/css">
+
+body{
+background-color:#FFF7FB;
+}
+
+#mainbar{
+-webkit-column-count:5;
+-moz-column-count:5;
+columns-count:5;
+align:center;
+}
+
+#mathbar{
+-moz-box-oridinal-group:1;
+-webkit-box-oridinal-group:1;
+background-color:#99BBFF;
+}
+
+#physbar{
+-moz-box-oridinal-group:2;
+-webkit-box-oridinal-group:2;
+background-color:#00DDAA;
+}
+
+#compbar{
+-moz-box-oridinal-group:3;
+-webkit-box-oridinal-group:3;
+background-color:#00AA88;
+}
+
+#entebar{
+-moz-box-oridinal-group:4;
+-webkit-box-oridinal-group:4;
+background-color:#00DD77;
+}
+
+#lifebar{
+-moz-box-oridinal-group:5;
+-webkit-box-oridinal-group:5;
+background-color:#5599FF;
+}
+
+#mathbar,#physbar,#compbar,#entebar,#lifebar{
+box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+column-rule:dashed 10px red;
+float:left;
+padding:20px;
+width:360px;
+}
+
+#mathbar,#physbar,#compbar,#entebar,#lifebar li{
+text-align:left;
+color:#5555FF;
+}
+
+h1 {
+column-span:all
+}
+
+h2 {
+column-span:all
+}
+
+f2{
+ font-family:"黑体"; 
+ font-size:16px;
+ color:#000000;
+}
+
+f1{
+ font-family:"黑体"; 
+ font-size:32px;
+ color:#000000;
+ font-weight:bold;
+}
+
+form{
+border: 10px solid #006600;
+}
+
+input 
+{
+height:25px;
+width:320px;
+padding-top:0px;
+padding-bottom:0px;
+font-size:20px;
+font-weight:bold;
+background:#AAAAAA;
+color:#770077;
+text-align:center;
+}
+
+.button {
+    width: 50px;
+    height:5px;
+    text-overflow:ellipsis; 
+    white-space:nowrap; 
+    overflow:hidden;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+
+<table width="400" height="80" border="20px" align="center" >
+
+<tr>
+
+<td>
+
+<form action="https://www.google.com/ncr" method="get" target="_blank">  
+	<input type="text" size="40" maxlength="255" value="" name="word" style="height:30px" autocomplete="off"/>  
+	<input type="submit" name="btnG" style="height:30px" value="Google" />  
+</form> 
+
+</td>
+
+
+<td>
+<form action="https://zh.wikipedia.org/wiki/Wikipedia:首页" method="get" target="_blank">  
+	<input type="text"  size="40" maxlength="255" value="" name="word" style="height:30px" autocomplete="off"/>  
+	<input type="submit" name="btnG" style="height:30px" value="Wikipedia" />  
+</form> 
+
+</td>
+
+<td>
+<form action="https://sci-bay.org/schhp?hl=en&as_sdt=0,5" method="get" target="_blank" name="bdfm" >  
+	<input type="text"  size="40" maxlength="255" value="" name="q" style="height:30px" autocomplete="off"/>  
+	<input type="submit" style="height:30px" value="Sci-bay" />  
+</form> 
+
+</td>
+
+<td>
+<form id="bdfm" target="_blank" name="bdfm" method="get" action="http://www.baidu.com/s">
+	<input type="text"   size="40" maxlength="255" value="" name="word" style="height:30px" autocomplete="off"/> 
+	<input type="submit" style="height:30px" line-height="right" value="Baidu"/>    
+</form> 
+</td>
+
+
+</tr>
+
+</table>
+
+<div class="text" style="text-align:center;" style="color:#00AA88"><f1>Part1</f1></div>
+
+<div id="mainbar">
+
+    <div id="mathbar">
+        <f1>Math</f1>
+        <ul>
+            <li>
+              <a href="https://isisn.nsfc.gov.cn/egrantweb/"target="_blank"   ><f2>国家自认科学基金</f2></a>
+                <a href="http://ywgl.jxstc.gov.cn/egrantweb/#"target="_blank"   ><f2> 江西省科技厅</f2></a>
+            </li>
+            
+            <li>
+               <a href="http://www.wolfram.com/?source=nav"target="_blank"><f2>Wolfram</f2></a> 
+               <a href="http://www.wolframalpha.com/?source=frontpage-immediate-access"target="_blank"><f2>WolframInput</f2></a> 
+               <a href="http://www.wolframalpha.com/examples/?src=input"target="_blank"><f2>WolframExample</f2></a> 
+            </li>            
+
+            <li>
+              <a href="http://www.applmath.com.cn/"target="_blank"><f2> 应用数学学报 </f2></a> 
+               <a href="http://www.math.org.cn/"target="_blank"><f2> 博士数学 </f2></a> 
+            </li>
+            
+            <li>
+			   <a href="https://www.math.ualberta.ca/ijnam/"target="_blank"><f2>  IJNAM </f2></a> 
+               <a href="http://advmath.pku.edu.cn/CN/volumn/home.shtml"target="_blank"><f2> 数学进展 </f2></a> 
+            </li>  
+
+
+            <li>
+               <a href="http://math.stackexchange.com/"target="_blank"><f2> MathStack </f2></a> 
+			   <a href="http://physics.stackexchange.com/"target="_blank"><f2> PhyStack </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.xueshufang.com/qikan/7972.htm"target="_blank"><f2>数学译林</f2></a> 
+            </li>    
+
+            <li>
+               <a href="http://www.duodaa.com/"target="_blank"><f2> Duodaa数学 </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.ilovematlab.cn/forum.php"target="_blank"><f2> MatlabBBS </f2></a> 
+            </li>            
+
+            <li>
+               <a href="http://www.benfrederickson.com/numerical-optimization/"target="_blank"><f2>numerical-optimization</f2></a>  
+            </li>
+            
+            <li>
+              <a href="http://intlpress.sinaapp.com/mh/essay.php?id=357"target="_blank"><f2>数理人文</f2></a>    
+            </li>  
+
+
+            <li>
+              <a href="http://www.math.ac.cn/xshd/sxsjz/index.html"target="_blank"><f2>数学所讲座</f2></a>      
+            </li>
+            
+            <li>
+               <a href="http://actamath.com/"target="_blank"><f2> 数学学报 </f2></a>  
+            </li>             
+ 
+            <li>
+               <a href="https://computing.llnl.gov/?set=training&page=index#training_materials"target="_blank"><f2> 并行计算 </f2></a>   
+            </li>
+            
+            <li>
+                <a href="http://www.nvidia.cn/object/cudazone-cn.html"target="_blank"><f2> nvidia</f2></a>    
+            </li>            
+
+            <li>
+              <a href="http://people.sc.fsu.edu/~jburkardt/m_src/"target="_blank"><f2> WonderfulCode</f2></a>      
+            </li>
+            
+            <li>
+              <a href="http://www.amss.ac.cn/"target="_blank"><f2> 	数学与系统科学研究院</f2></a>       
+            </li>  
+
+
+            <li>
+              <a href="http://library.amss.ac.cn/newweb/index.asp"target="_blank"><f2> 数学与系统科学研究院图书馆</f2></a>       
+            </li>
+            
+            <li>
+              <a href="http://lsec.cc.ac.cn/chinese/lsec/links.html"target="_blank"><f2>科学院科学与工程计算国家重点实验室</f2></a>       
+            </li>              
+
+
+            <li>
+              <a href="http://www.ams.org/home/page"target="_blank"><f2>AMS</f2></a>    
+			  <a href="http://blog.sciencenet.cn/home.php?mod=space&uid=2472277"target="_blank"><f2>老顾几何</f2></a>   
+            </li>
+            
+            <li>
+               <a href="http://www.amt.ac.cn/"target="_blank"><f2>应数所</f2></a>     
+            </li>            
+
+            <li>
+              <a href="http://www.jjj.de/fxt/fxtpage.html#fxtbook"target="_blank"><f2>fxt</f2></a>   
+            </li>
+            
+            <li>
+              <a href="https://betterexplained.com/"target="_blank"><f2> betterexplained</f2></a>     
+            </li>  
+
+
+            <li>
+              <a href="https://bitworking.org/news/ga/2d"target="_blank"><f2>Geometric Algebra</f2></a>       
+            </li>
+            
+            <li>
+              <a href="https://www.encyclopediaofmath.org/index.php/Main_Page"target="_blank"><f2>数学百科EN</f2></a>             
+            </li> 
+
+            <li>
+              <a href="http://www.escience.cn/people"target="_blank"><f2>学术主页</f2></a>  
+            </li>
+            
+            <li>
+              <a href="https://www.patreon.com/3blue1brown"target="_blank"><f2>3blue1brown</f2></a>    
+            </li>            
+
+            <li>
+              <a href="http://students.brown.edu/seeing-theory/index.html"target="_blank"><f2>seeing-theory</f2></a>      
+            </li>
+            
+            <li>
+               <a href="https://scholar.google.com/"target="_blank"><f2>scholar.google</f2></a>       
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+
+
+    <div id="physbar">
+        <f1>Physics</f1>
+                <ul>
+            <li>
+                <a href="http://bioms.org/"target="_blank"><f2> BioSimulation </f2></a>
+                <a href="http://simulation.haotui.com/bbs.php"target="_blank"><f2> 分子模拟BBS </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://ngpy.org/"target="_blank"><f2> LiuyixinPolymer </f2></a> 
+			   <a href="http://openems.de/start/index.php"><f2> openems </f2></a> 
+            </li>            
+
+            <li>
+               <a href="http://physics.stackexchange.com/"target="_blank"><f2>physicsstackexchange</f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://en.wikipedia.org/wiki/List_of_software_for_molecular_mechanics_modeling/"target="_blank"><f2> Wike分子模拟 </f2></a> 
+            </li>  
+
+
+            <li>
+               <a href="http://people.sc.fsu.edu/~jburkardt/m_src/md/md.html"target="_blank"><f2> MolecularSimulation </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.ud.infn.it/~ercolessi/md/"target="_blank"><f2> MolecularDynamic </f2></a> 
+            </li>              
+
+            <li>
+               <a href="http://dcwww.camd.dtu.dk/~ohnielse/md/md.html"target="_blank"><f2> ParallelMD</f2> </a> 
+            </li>
+            
+            <li>
+               <a href="https://www.tue.nl/en/university/departments/applied-physics/research/functional-materials/theory-of-polymers-and-soft-matter/"target="_blank"><f2> SoftMatter </f2></a> 
+            </li>            
+
+            <li>
+               <a href="http://research.cems.umn.edu/morse/code/pmc/pmc/trunk/doc/api/index.html"target="_blank"><f2> DavidMorse </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.math.pku.edu.cn/pzhang/Chinese/index.html"target="_blank" title="模拟方向北大的院士"><f2> 张文平 </f2></a> 
+            </li>  
+
+
+            <li>
+              <a href="http://www.symmetrymagazine.org/"target="_blank"><f2>symmetrymagazine</f2></a> 
+               <a href="http://www.wuli.ac.cn/CN/volumn/home.shtml"target="_blank"><f2> 物理 </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://mp.ihep.ac.cn:8080/jwk_xdwlzs/CN/volumn/home.shtml"target="_blank"><f2> 现代物理 </f2></a> 
+            </li>  
+
+            <li>
+               <a href="http://blog.sciencenet.cn/home.php?mod=space&uid=3102863"target="_blank"><f2> 樊哲勇的博客 </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.cjcp.org.cn/CN/volumn/home.shtml"target="_blank"><f2> ComputationalPhysics </f2></a> 
+            </li>            
+
+            <li>
+                 <a href="http://www.changhai.org/index.php"target="_blank"><f2>  卢昌海 </f2></a> 
+            </li>
+            
+            <li>
+               <a href="https://www.scientificamerican.com/"target="_blank"><f2> scientificamerican </f2></a>  
+            </li>  
+
+
+            <li>
+               <a href="http://math.ucr.edu/home/baez/"target="_blank"><f2>baez </f2></a>   
+            </li>
+            
+            <li>
+               <a href="http://www.acclab.helsinki.fi/~knordlun/moldyn/"target="_blank"><f2>moldyn</f2></a>    
+            </li>              
+
+
+            <li>
+               <a href="http://wwwth.mpp.mpg.de/members/hahn/"target="_blank"><f2>hahnFeynmanDiagram</f2></a>     
+            </li>
+            
+            <li>
+               <a href="https://www.physicsforums.com/"target="_blank"><f2>physicsforums</f2></a>      
+            </li>            
+
+            <li>
+              <a href="http://users.physik.fu-berlin.de/~kleinert/kleinert/"target="_blank"><f2>kleinert</f2></a>        
+            </li>
+            
+            <li>
+              <a href="http://christian.mendl.net/pages/software.html"target="_blank"><f2>christian</f2></a>          
+            </li>  
+
+
+            <li>
+                <a href="https://www.quantamagazine.org/"target="_blank"><f2>quantamagazine</f2></a>          
+            </li>
+            
+            <li>
+               <a href="http://pip.nju.edu.cn/"target="_blank"><f2>物理学进展</f2></a>   
+            </li>  
+
+            <li>
+               <a href="http://people.sc.fsu.edu/~jburkardt/f_src/ising_2d_simulation/ising_2d_simulation.html"target="_blank"><f2>IsingFortranCode</f2></a>     
+            </li>
+            
+            <li>
+               <a href="http://f90in15minutes.wikidot.com/"target="_blank"><f2>f90in15minutes</f2></a>       
+            </li>            
+
+            <li>
+              <a href="http://www.physics.purdue.edu/~hisao/book/www/samples.html"target="_blank"><f2>physicsCODE</f2></a>  
+            </li>
+            
+            <li>
+              <a href="http://www.physics.udel.edu/~bnikolic/teaching/phys660/code.html"target="_blank"><f2>physics.udel.edu</f2></a>    
+            </li>  
+
+
+            <li>
+              <a href="https://people.sc.fsu.edu/~jburkardt/cpp_src/md/md.html"target="_blank"><f2>people.sc.fsu.edu</f2></a>    
+            </li>
+            
+            <li>
+              <a href="http://openmd.org/"target="_blank"><f2>openmd</f2></a>   
+			  <a href="https://cindyjs.org/gallery/main/"target="_blank"><f2>cindyjs</f2></a>    			  
+            </li>    
+
+            <li>
+               <a href="http://www.iop.cas.cn/"target="_blank"><f2>物理所</f2></a>     
+            </li>
+            
+            <li>
+               <a href="http://www.ihep.cas.cn/"target="_blank"><f2>高能所</f2></a>      
+            </li>            
+
+            <li>
+               <a href="http://www.physics.ntua.gr/~konstant/ComputationalPhysics/Book/ComputationalPhysicsKNA.html"target="_blank"><f2>ComputationalPhysicsKNA</f2></a>    
+            </li>
+            
+            <li>
+              <a href="http://freescience.info/index.php"target="_blank"><f2>freescience</f2></a>        
+            </li>  
+
+
+            <li>
+              <a href="https://www.physics.rutgers.edu/grad/509/"target="_blank"><f2>ComputationalPhysicsRutgers</f2></a>       
+            </li>
+            
+            <li>
+               <a href="https://www.physics.ohio-state.edu/~ntg/6810/compphys_info.php"target="_blank"><f2>hysics.ohio-state</f2></a>    
+            </li>             
+ 
+            <li>
+              <a href="http://www.physics.buffalo.edu/phy411-506/index.html"target="_blank"><f2>physics.buffalo.edu</f2></a>         
+            </li>
+            
+            <li>
+              <a href="http://www.physics.ohio-state.edu/~ntg/780/compphys.php"target="_blank"><f2>physics.ohio-state</f2></a>      
+            </li>            
+
+            <li>
+              <a href="http://www.john-von-neumann-institut.de/nic/EN/Publications/NICSeries/_node.html"target="_blank"><f2>NICSeries</f2></a>       
+            </li>
+            
+            <li>
+              <a href="http://www.hanspub.org/"target="_blank"><f2>汉斯期刊</f2></a>    
+              <a href="http://www.kexuemag.cn/"target="_blank"><f2>kexuemag</f2></a> 
+            </li>  
+
+
+            <li>
+              <a href="http://www.global-sci.com/"target="_blank"><f2>ComComPhy</f2></a>      
+			  <a href="http://wulixb.iphy.ac.cn/CN/volumn/home.shtml"target="_blank"><f2>物理学报</f2></a>   
+			  <a href="http://www.cqvip.com/qk/83837X/200605/"target="_blank"><f2>理论物理</f2></a>   
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+            
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            
+        </ul>
+    </div>
+
+    <div id="compbar">
+        <f1>Computer</f1>
+           <ul>
+            <li>
+                <a href="http://192.168.0.1/"target="_blank"><f2>192.168.0.1|ecit11050728</f2></a>    
+            </li>
+            
+            <li>
+               <a href="https://searchcode.com/"target="_blank"><f2> SourceCode </f2></a> 
+			   <a href="http://blogread.cn/it/"target="_blank"><f2>IT技术博客大学习</f2></a> 
+            </li>            
+
+            <li>
+               <a href="http://www.html5tricks.com/"target="_blank"><f2> HtmlCSS </f2></a> 
+			   <a href="http://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html"target="_blank"><f2> scrapy</f2></a> 
+			   <a href="http://www.yinwang.org/ "target="_blank"><f2>yinwang</f2></a> 
+            </li>
+           
+            <li>
+               <a href="http://ourcoders.com/home/"target="_blank"><f2> OurCoders </f2></a> 
+			   <a href="http://www.cnplugins.com/"target="_blank"><f2> 浏览器插件 </f2></a> 
+            </li>  
+
+
+            <li>
+              <a href="http://www.divcss5.com/html5/h716.shtml"target="_blank"><f2> HtmlDiv </f2></a> 
+			  <a href="https://github.com/cuber/ngx_http_google_filter_module/blob/master/README.zh-CN.md"target="_blank"><f2>GoogleVPN</f2></a>  
+			  <a href="https://imtx.me/"target="_blank"><f2>imtxVPN</f2></a>  
+            </li>
+            
+            <li>
+                <a href="http://courses.cms.caltech.edu/cs179/	"target="_blank"><f2> GPUCalculation </f2></a>
+				<a href="http://cjc.ict.ac.cn/	"target="_blank"><f2> 计算机学报 </f2></a>
+            </li>              
+ 
+            <li>
+                <a href="http://ask.codeceo.com/"target="_blank"><f2> CodeAsk </f2></a>
+				<a href="http://www.epubit.com.cn/"target="_blank"><f2> 异步社区</f2></a>
+            </li>
+            
+            <li>
+               <a href="https://sourceforge.net/"target="_blank"><f2> Sourceforge</f2> </a> 
+			   <a href="http://crad.ict.ac.cn/CN/volumn/home.shtml"target="_blank"><f2>计算机研究与发展</f2> </a> 
+            </li>            
+
+            <li>
+              <a href="https://github.com/getlantern/lantern"target="_blank"><f2> LanternGithub </f2></a>  
+			  <a href="http://hao.199it.com/"target="_blank"><f2> 大数据导航</f2></a>  
+            </li>
+            
+            <li>
+               <a href="http://blog.csdn.net/"target="_blank"><f2> CSDN </f2></a>
+			   <a href="http://nlp.fudan.edu.cn/xpqiu/"target="_blank"><f2> 邱锡鹏 </f2></a> 
+			   <a href="http://office.mmais.com.cn/List.shtml?cat=ppt"target="_blank"><f2> officePlus</f2></a> 
+            </li>  
+
+
+            <li>
+               <a href="http://www.codeceo.com/"target="_blank", title="一个有源码演示的网站"><f2> 码农网 </f2></a> 
+			   <a href="https://www.oschina.net/"target="_blank", title="一个有源码演示的网站"><f2> oschina </f2></a> 
+			   <a href="http://www.tensorfly.cn/"target="_blank", title="一个有源码演示的网站"><f2> tensorfly </f2></a> 
+            </li>
+            
+            <li>
+               <a href="https://segmentfault.com/"target="_blank"><f2> SegmentFault </f2></a> 
+			   <a href="https://www.aliyun.com/"target="_blank"><f2> Aliyun </f2></a> 
+            </li>  
+            
+            <li>
+               <a href="http://www.html5cn.org/"target="_blank"><f2> html5cn </f2></a> 
+            </li>
+            
+            <li>
+               <a href="https://sourceforge.net/"target="_blank"><f2> SourceForge </f2></a> 
+            </li>            
+
+            <li>
+              <a href="http://www.latexstudio.net/"target="_blank"><f2> Latex </f2></a>  
+            </li>
+            
+            <li>
+              <a href="http://www.cnblogs.com/China3S/p/3500478.html"target="_blank"><f2>PrarallelFortran </f2></a>  
+            </li>  
+
+
+            <li>
+               <a href="http://blog.jobbole.com/"target="_blank"><f2> jobbole </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"target="_blank"><f2>CUDANvidia</f2></a>   
+            </li>              
+
+
+            <li>
+               <a href="http://bbs.gpuworld.cn/forum.phphttp://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html"target="_blank"><f2>gpuworld</f2></a>    
+            </li>
+            
+            <li>
+               <a href="http://www.ctex.org/HomePage"target="_blank"><f2>ctex</f2></a> 
+			   <a href="http://caai.cn/index.php?s=/Home/Article/qikandetail/year/2017/month/01.html"target="_blank"><f2>人工智能</f2></a> 			   
+            </li>            
+
+            <li>
+              <a href="http://www.sciencedirect.com/"target="_blank"><f2>sciencedirect</f2></a>   
+            </li>
+            
+            <li>
+              <a href="http://www.iconninja.com/"target="_blank"><f2>iconninja</f2></a>     
+            </li>  
+
+
+            <li>
+               <a href="http://cn.mathworks.com/examples/matlab?s_eid=PSM_gen"target="_blank"><f2>MatlabExample</f2></a>       
+            </li>
+            
+            <li>
+               <a href="http://reference.wolfram.com/language/"target="_blank"><f2>WolfRam中心</f2></a>        
+            </li> 
+
+            <li>
+              <a href="https://github.com/google/styleguide/blob/gh-pages/README.md"target="_blank"><f2>Google Style Guides</f2></a>      
+            </li>
+            
+            <li>
+              <a href="http://blog.jobbole.com/category/c-cpp/"target="_blank"><f2>伯乐C和C++</f2></a>        
+            </li>            
+
+            <li>
+              <a href="http://www.geeksforgeeks.org/"target="_blank"><f2>geeksforgeeks</f2></a>     
+            </li>
+            
+            <li>
+              <a href="http://www.kuqin.com/language/"target="_blank"><f2>kuqin</f2></a>    
+            </li>  
+
+
+            <li>
+               <a href="http://developer.nvidia-china.com/forum.php?gid=1"target="_blank"><f2>英伟达GPU</f2></a>    
+            </li>
+            
+            <li>
+               <a href="http://hpcbbs.it168.com/"target="_blank"><f2>高性能并行计算论坛</f2></a>      
+            </li>    
+
+            <li>
+              <a href="https://cn.mathworks.com/products/matlab/plot-gallery.html?s_eid=PSM_gen"target="_blank"><f2>Matlab绘图库</f2></a>      
+            </li>
+            
+            <li>
+			  <a href="http://www.52cs.org/"target="_blank"><f2>52cs</f2></a>     
+              <a href="https://github.com"target="_blank"><f2>Github</f2></a>      
+            </li>            
+
+            <li>
+              <a href="https://sci-bay.org/schhp?hl=en&as_sdt=0,5"target="_blank"><f2>sci-bay</f2></a>   
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+
+            
+             <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            
+        </ul>
+    </div>
+
+
+    <div id="entebar">
+        <f1>Entertainment</f1>
+                <ul>
+            <li>
+                <a href="http://www.shenmidizhi.com/"target="_blank"><f2> 神秘地址 </f2></a>
+                <a href="http://i.firefoxchina.cn/?www.firefoxchina.cn"target="_blank"><f2> 火狐主页 </f2></a>
+                <a href="http://byr.wiki/"target="_blank"><f2>北邮人导航</f2></a>  
+            </li>
+            
+            <li>
+                <a href="http://www.bthave.org"target="_blank"><f2> Bthave </f2></a>
+                <a href="http://alicili.org/"target="_blank"><f2> Alicili </f2></a>
+                <a href="https://btdigg.org/"target="_blank"><f2> BtDig </f2></a> 
+                <a href="http://www.panc.cc/"target="_blank"><f2>panc</f2></a> 
+                <a href="http://www.ed2000.com/"target="_blank"><f2>ed2000</f2></a>                       
+            </li>            
+                
+            <li>
+              <a href="http://www.tmall.com/"target="_blank"><f2> 天猫 </f2></a>
+                <a href="https://www.jd.com/"target="_blank"><f2> 京东 </f2></a> 
+               <a href="http://www.dangdang.com"target="_blank"><f2> 当当网 </f2></a> 
+                <a href="https://www.amazon.cn/"target="_blank"><f2> 亚马逊 </f2></a>                 
+            </li>
+            
+            <li>
+            <a href="https://btso.pw/"target="_blank"><f2>btso</f2></a>
+            <a href="http://kaopu.so/"target="_blank"><f2>kaopuso</f2></a>
+                <a href="http://weibo.com"target="_blank"><f2> 微博 </f2></a>
+                 <a href="http://www.weibovideo.com/"target="_blank"><f2> 微博视频 </f2></a> 
+				 <a href="http://www.panduoduo.net/"target="_blank"><f2>盘多多</f2></a> 
+            </li>  
+
+
+            <li>
+              <a href="http://www.youku.com/"target="_blank"><f2> Youku </f2></a>  
+              <a href="http://www.bilibili.com/"target="_blank"><f2> Bilibili </f2></a> 
+              <a href="http://www.acfun.tv/"target="_blank"><f2> Acfun </f2></a>   
+			  <a href="https://xueqiu.com/hq"target="_blank"><f2> 雪球</f2></a>
+            </li>
+            
+            <li>
+               <a href="http://kaopu.so/"target="_blank"><f2> 靠谱搜 </f2></a> 
+                <a href="http://www.xilinjie.com/"target="_blank"><f2> 西林街 </f2></a> 
+                <a href="http://1024me.carp.mopaasapp.com/"target="_blank"><f2>Miusic下载</f2></a>
+                <a href="https://rarbg.to/torrents.php"target="_blank"><f2>rarbg</f2></a>      
+            </li> 
+
+            
+
+
+            <li>
+               <a href="http://www.speedtest.net/"target="_blank"><f2>speedtest</f2></a>   
+               <a href="https://github.com/racaljk/hosts"target="_blank"><f2>githubhosts</f2></a>  
+               <a href="https://laod.cn/hosts/2016-google-hosts.html"target="_blank"><f2>gaohosts</f2></a>                 
+            </li>
+            
+            <li>
+              <a href="http://www.autohome.com.cn/nanchang/"target="_blank"><f2>汽车之家</f2></a>    
+               <a href="http://www.lfang.com/"target="_blank"><f2>lfang</f2></a>    
+               <a href="http://nc.anjuke.com/"target="_blank"><f2>anjuke</f2></a> 
+               <a href="http://nc.leju.com/"target="_blank"><f2>乐居</f2></a>   	
+            </li>              
+
+
+            <li>
+               <a href="http://www.dysfz.cc"target="_blank"><f2>电影大全</f2></a> 
+               <a href="https://www.reddit.com"target="_blank"><f2>reddit</f2></a> 
+               <a href="https://mp.weixin.qq.com/"target="_blank"><f2>微信公众号</f2></a>      
+            </li>
+            
+            <li>
+              <a href="http://www.openculture.com/math_free_courses"target="_blank"><f2>mathfreecou</f2></a>  
+			  <a href="http://explainshell.com/"target="_blank"><f2>explainshell</f2></a>  
+            </li>            
+
+            <li>
+              <a href="http://taho.cc/"target="_blank"><f2>taho.cc</f2></a>       
+			  <a href="http://www.btput.com/"target="_blank"><f2>btput</f2></a>    
+			  <a href="http://cilifuli.com/"target="_blank"><f2>cilifuli</f2></a>  
+			  <a href="https://torrentz2.eu/"target="_blank"><f2>torrentz2</f2></a>  
+            </li>
+        
+            <li>
+			  <a href="https://www.youtube.com/"target="_blank"><f2>youtube</f2></a>  
+			  <a href="https://twitter.com/"target="_blank"><f2>twitter</f2></a> 
+              <a href="http://www.pptv.com/"target="_blank"><f2>pptv</f2></a>
+			  <a href="http://www.newsmth.net/nForum/#!mainpage"target="_blank"><f2>水木</f2></a>    			  			  		  
+            </li>  
+
+
+            <li>
+              <a href="http://www.newsmth.net/nForum/#!mainpage"target="_blank"><f2>水木社区</f2></a>  
+			  <a href="https://www.lsjdyw.net/"target="_blank"><f2>lsjdyw</f2></a>  
+			  <a href="http://neets.cc/category?country=%E9%9F%A9%E5%9B%BD&endYear=&order=1&startYear=&state=&subType=tv"target="_blank"><f2>neets</f2></a>   			  
+            </li>
+            
+            <li>
+              <a href="https://bigquant.com/"target="_blank"><f2>bigquant</f2></a>  
+			  <a href="https://aws.amazon.com/cn/"target="_blank"><f2>awsamazon</f2></a> 
+			  <a href="https://wallstreetcn.com/news/global?from=navbar"target="_blank"><f2>wallstreetcn</f2></a>  			  
+            </li> 
+
+            <li>
+               <a href="http://www.baicaiyouxuan.com/"target="_blank"><f2>baicaiyouxuan</f2></a>  
+			   <a href="http://zh.gluon.ai/index.html"target="_blank"><f2>gluonai</f2></a> 
+			   <a href="https://sherlockliao.github.io/"target="_blank"><f2>sherlockliao</f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://ping.pe/"target="_blank"><f2>ping.pe</f2></a> 
+			   <a href="https://github.com/xitu/tensorflow-docs"target="_blank"><f2>tensorflow-docs</f2></a>
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+            <li>
+               
+            </li>
+            
+            <li>
+              
+            </li>            
+
+            <li>
+              
+            </li>
+            
+            <li>
+               
+            </li>  
+
+
+            <li>
+               
+            </li>
+            
+            <li>
+               
+            </li> 
+
+            <li>
+               
+            </li>
+            
+            <li>
+              
+            </li>            
+
+            <li>
+              
+            </li>
+            
+            <li>
+             
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="lifebar">
+        <f1>Life</f1>
+            <ul>
+            <li>
+                <a href="https://www.google.com.hk/ncr"target="_blank"><f2> Google </f2></a>
+                <a href="http://cn.bing.com/"target="_blank"><f2> Bing </f2></a>
+                <a href="http://xs.chongbuluo.com/"target="_blank"><f2> ChongbuluoXS </f2></a>
+                <a href="http://www.panc.cc/"target="_blank"><f2> 胖次 </f2></a> 
+            </li>
+            
+            <li>
+                <a href="http://coursegraph.com/"target="_blank"><f2> 课程图谱</f2></a>
+                <a href="http://ocw.aca.ntu.edu.tw/ntu-ocw/"target="_blank"><f2>  台湾大学 </f2></a> 
+               <a href="http://ocw.nctu.edu.tw/"target="_blank"><f2> 交通大学 </f2></a>  
+            </li>            
+
+            <li>
+                <a href="https://sci-hub.bz/"target="_blank"><f2>SciHub </f2></a>
+               <a href="http://www.oalib.com/"target="_blank"><f2>Oalib</f2></a>   
+               <a href="http://corpus.byu.edu/coca/"target="_blank"><f2>PaperRevise </f2></a> 
+            </li>
+            
+            <li>
+              <a href="http://eprint.las.ac.cn/home.htm	"target="_blank"><f2> CaXiv </f2></a> 
+              <a href="http://arxiv.org/"target="_blank"><f2> arXiv </f2></a>
+              <a href="http://b-ok.org/"target="_blank"><f2> Bookzz </f2></a>
+              <a href="http://gen.lib.rus.ec/"target="_blank"><f2>LibGen</f2></a> 
+            </li>  
+
+
+            <li>
+              <a href="http://ocw.mit.edu/courses/"target="_blank"><f2> MitCourses  </f2></a>
+              <a href="http://oyc.yale.edu/"target="_blank"><f2> Yale公开课 </f2></a> 
+              <a href="http://www.ppdzs.com/"target="_blank"><f2> 皮皮图书馆  </f2></a>  
+            </li>
+            
+            <li>
+              <a href="http://www.iccas.ac.cn"target="_blank"><f2> 化学所 </f2></a> 
+                  <a href="http://www.ecit.edu.cn"target="_blank"><f2> 东华理工 </f2></a>
+                 <a href="http://mail.ecit.cn/"target="_blank"><f2> EcitMail </f2></a>   
+            </li>              
+
+
+            <li>
+               <a href="https://www.jiumodiary.com/"target="_blank"><f2> 鸠摩搜书 </f2></a> 
+               <a href="http://www.freebookspot.es/"target="_blank"><f2> FreeBookSpot </f2></a> 
+               <a href="http://www.free-ebooks.net/"target="_blank"><f2> FreeBooks </f2></a>     
+            </li>
+            
+            <li>
+              <a href="http://manybooks.net/"target="_blank"><f2> ManyBooks </f2></a> 
+               <a href="http://www.freetechbooks.com/"target="_blank"><f2> FreeTechBooks </f2></a> 
+            </li>            
+
+            <li>
+               <a href="http://muchong.com/"target="_blank"><f2> 小木虫 </f2></a> 
+               <a href="http://ishare.iask.sina.com.cn/"target="_blank"><f2> Iask </f2></a>
+               <a href="http://v.163.com/special/test/alltest.html"target="_blank"><f2> 163公开课 </f2></a>                              
+            </li>
+               
+            <li>
+              <a href="http://cn.wikipedia.org/"target="_blank"><f2> Wike中文 </f2></a> 
+               <a href="http://en.wikipedia.org/"target="_blank"><f2> Wikipedia </f2></a> 
+            </li>  
+                      
+            <li>
+               <a href="http://www.icourses.cn/home/"target="_blank"><f2>icourses</f2></a> 
+               <a href="http://www.findarticles.com/"target="_blank"><f2>findarticles</f2></a>  
+            </li>
+           
+            <li>
+               <a href="https://www.douban.com/people/150117619/"target="_blank"><f2> Mydouban </f2></a> 
+               <a href="http://www.zhihu.com/"target="_blank"><f2> 知乎  </f2></a>   
+            </li> 
+              
+            <li>
+              <a href="http://www.bookschina.com/"target="_blank"><f2> BooksChina </f2></a> 
+            </li>
+               
+            <li>
+              <a href="http://so.chongbuluo.com/"target="_blank"><f2> 虫部落 </f2></a>  
+			  <a href="https://scholar.google.com.hk/"target="_blank"><f2>GscholarHK</f2></a>  
+            </li>            
+               
+            <li>
+              <a href="http://blog.sciencenet.cn/home.php?mod=space&uid=420554"target="_blank"><f2> 蒋迅blog </f2></a>   
+			  <a href="http://gate.guokr.com/"target="_blank"><f2> 果壳网 </f2></a>
+            </li>
+               
+            <li>
+              <a href="http://academictorrents.com/"target="_blank"><f2> AcademicTorrents </f2></a>  
+            </li>  
+
+
+            <li>
+              <a href="https://www.quora.com/#"target="_blank"><f2> Quora </f2></a>  
+              <a href="http://erikdemaine.org/"target="_blank"><f2> Demaine </f2></a> 
+            </li>
+            
+            <li>
+               <a href="http://www.ted.com/"target="_blank"><f2> Ted </f2></a> 
+               <a href="http://www.scientificamerican.com/"target="_blank"><f2> SciAmerican </f2></a>       
+            </li>              
+
+
+            <li>
+              <a href="https://academictree.org/chemistry/index.php"target="_blank"><f2>academictree</f2></a>  
+            </li>
+            
+            <li>
+              <a href="https://www-lib-uwo-ca.proxy1.lib.uwo.ca/"target="_blank"><f2>libuwoca</f2></a>
+			  <a href="http://dir.cnki.net/"target="_blank"><f2> 学术大全 </f2></a>
+            </li>            
+
+            <li>
+              <a href="https://www.guiderank.org/"target="_blank"><f2> 盖得 </f2></a>  
+            </li>
+            
+            <li>
+               
+            </li>  
+
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li> 
+            
+            
+            <li>
+               
+            </li>
+            
+            <li>
+              
+            </li>            
+
+            <li>
+              
+            </li>
+            
+            <li>
+               
+            </li>  
+
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+              
+            </li>            
+
+            <li>
+             
+            </li>
+            
+            <li>
+
+            </li>  
+
+
+            <li>
+              
+            </li>
+            
+            <li>
+               
+            </li>             
+ 
+            <li>
+               
+            </li>
+            
+            <li>
+               
+            </li>            
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+            
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+               
+            </li>
+            
+            <li>
+                
+            </li>           
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li> 
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>    
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>             
+ 
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>              
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>            
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>  
+
+
+            <li>
+                
+            </li>
+            
+            <li>
+                
+            </li>
+ 
+        </ul>
+    </div>
+    
+    
+</div>
+
+
+
+
+
+
+</body>
+
+</head>
+</html>
